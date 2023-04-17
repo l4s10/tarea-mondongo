@@ -15,6 +15,11 @@ const tareaSchema = new mongoose.Schema({
         type: Boolean,
         required: true,
     },
+    usuario: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Usuario',
+        required: true,
+    },
 });
 
 //*Ahora se crea el modelo de la tarea a partir de su esquema */
